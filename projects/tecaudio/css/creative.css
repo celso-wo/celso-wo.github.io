@@ -112,7 +112,8 @@ aside {
 }
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: transparent;
+    background-color: #3D6572;
+    /*background-color: transparent;*/
     /*border-color: rgba(255, 255, 255, 0.3);*/
     border-color: transparent;
   }
@@ -133,7 +134,7 @@ aside {
   }
 
   .navbar-default .navbar-header {
-    display: none;
+    /*display: none;*/
   }
 
   .navbar-default.affix {
@@ -142,7 +143,7 @@ aside {
   }
 
   .navbar-default.affix .navbar-header {
-    display: block;
+    /*display: block;*/
   }
 
   .navbar-default.affix .navbar-header .navbar-brand {
@@ -179,24 +180,24 @@ header {
 header .header-content {
   position: relative;
   text-align: center;
-  padding: 90px 15px 100px;
+  padding: 90px 15px 0px;
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 560px;
   font-size: 30px;
 }
-header .header-content .header-content-inner hr {
+/*header .header-content .header-content-inner hr {
   margin: 60px auto;
-}
+}*/
 header .header-content .header-content-inner p {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
 }
 @media (min-width: 768px) {
   header {
@@ -204,11 +205,11 @@ header .header-content .header-content-inner p {
   }
   header .header-content {
     position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
+    bottom: 0;
+    /*-webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 0 50px;
+    transform: translateY(-50%);*/
+    /*padding: 0 50px;*/
   }
 
   header .header-content .header-content-inner hr {
