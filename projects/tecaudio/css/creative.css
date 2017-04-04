@@ -176,23 +176,27 @@ header {
   background-image: url('../img/header.jpg');
   text-align: center;
   color: white;
+  min-height: 100%;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 header .header-content {
-  position: relative;
+  /*position: relative;*/
   text-align: center;
-  padding: 90px 15px 0px;
+  padding: 10px 15px 0px;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 header .header-content .header-content-inner h1 {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 560px;
+  margin-bottom: 0;
   font-size: 30px;
 }
-/*header .header-content .header-content-inner hr {
-  margin: 60px auto;
-}*/
+header .header-content .header-content-inner hr {
+  margin: 30px auto;
+}
 header .header-content .header-content-inner p {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
@@ -200,22 +204,18 @@ header .header-content .header-content-inner p {
   /*margin-bottom: 50px;*/
 }
 @media (min-width: 768px) {
-  header {
+  /*header {
     min-height: 100%;
-  }
+  }*/
   header .header-content {
     position: absolute;
     bottom: 0;
     /*-webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);*/
-    /*padding: 0 50px;*/
+    transform: translateY(-50%);
+    padding: 0 50px;*/
+    padding: 100px 15px 10px;
   }
-
-  header .header-content .header-content-inner hr {
-    margin: 70px auto;
-  }
-
   header .header-content .header-content-inner {
     max-width: 1000px;
     margin-left: auto;
@@ -223,9 +223,9 @@ header .header-content .header-content-inner p {
   }
   header .header-content .header-content-inner h1 {
     font-size: 50px;
+    margin-bottom: 30px;
   }
   header .header-content .header-content-inner p {
-    /*margin-top:60px;*/
     font-size: 18px;
     max-width: 80%;
     margin-left: auto;
